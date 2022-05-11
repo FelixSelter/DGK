@@ -1,0 +1,113 @@
+/* #00E5FF
+#021111
+#042121 */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  font-family: "Roboto";
+  font-size: 10px;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #021111;
+}
+
+html * {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 1rem solid #00e5ff;
+}
+
+#student {
+  height: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.characters {
+  width: 100%;
+  padding: 10%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.character {
+  font-size: 3rem;
+  width: 4.5rem;
+  height: 6rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  background-color: #042121;
+
+  border-radius: 1rem;
+
+  padding: 1rem;
+  margin: 1rem 0.5rem 1rem 0.5rem;
+  transition: all 550ms;
+}
+
+.character.show {
+  animation: showletters 200ms forwards;
+}
+
+.character.done {
+  color: #042121;
+  background-color: #00e5ff;
+}
+
+.character.animate {
+  filter: blur(3px);
+  color: white;
+}
+
+@keyframes showletters {
+  0% {
+    transform: translate(0, 15rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  cursor: pointer;
+  color: #042121;
+  border: none;
+  border-radius: 1rem;
+  width: 25rem;
+  padding: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: #00e5ff;
+}
