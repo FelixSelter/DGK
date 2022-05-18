@@ -16,6 +16,7 @@ const students = [
   "KILIAN",
   "KSENIA",
   "LENA",
+  "LIAS",
   "LISA",
   "TIMO",
 ];
